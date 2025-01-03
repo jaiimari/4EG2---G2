@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Manager - View Members' Work</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .content-wrapper {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 1.75rem;
+        }
+        .task-files {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .task-files ul {
+            list-style: none;
+            padding: 0;
+        }
+        .task-files li {
+            padding: 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .task-files li:last-child {
+            border-bottom: none;
+        }
+        .task-files a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .task-files a:hover {
+            text-decoration: underline;
+        }
+        .uploaded-by {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    {% include 'project_manager/sidebarheader.html' %}
+
+    <div class="content-wrapper">
+        <div class="header">
+            <h1>{{ task.name }}</h1> <!-- Display the task name -->
+        </div>
+
+        <div class="task-files">
+            <h5>Uploaded Files for this Task:</h5>
+            <ul>
+                {% if files %}
+                    {% for file in files %}
+                        <li>
+                            <a href="{{ file.file.url }}" target="_blank">
+                                <i class="fas fa-file-alt"></i> {{ file.file.name }}
+                            </a>
+                            <br>
+                            <span class="uploaded-by">
+                                <i class="fas fa-user"></i> Uploaded by: {{ file.uploaded_by.username }}
+                            </span>
+                        </li>
+                    {% endfor %}
+                {% else %}
+                    <li class="text-muted">No files uploaded yet.</li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

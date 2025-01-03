@@ -1,0 +1,200 @@
+        body {
+            background-color: #f8f9fa;
+        }
+        h1, h2 {
+            color: #343a40;
+        }
+        .task-card {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            background: linear-gradient(145deg, #ffffff, #f1f3f5);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+        .task-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+        .task-card-header {
+            font-size: 20px;
+            color: #495057;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .task-card-body {
+            flex-grow: 1;
+            padding: 10px 0;
+            color: #495057;
+            overflow: hidden;
+        }
+        .task-card-footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .task-card .btn {
+            margin-left: 10px;
+            padding: 8px 16px;
+            font-size: 14px;
+            border-radius: 20px;
+        }
+        .modal-header {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .btn-primary, .btn-secondary {
+            border-radius: 20px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+        }
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+        .task-card-footer .btn-sm {
+            padding: 6px 12px;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px 10px 0 0;
+            padding: 15px;
+        }
+        .container-fluid {
+            margin-left: 250px;
+        }
+        .no-tasks {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #6c757d;
+        }
+        
+        .project-card {
+            max-width: 1000px; 
+            margin: 0 auto; 
+        }
+        .card-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        .card-body p {
+            font-size: 1rem;
+            color: #495057;
+        }
+
+        .task-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.task-card-header span {
+    display: inline-block;
+    flex-grow: 1;
+}
+
+
+
+.task-card-body {
+    flex-grow: 1;
+    padding: 10px;
+    color: #495057;
+    overflow: hidden;
+}
+
+.task-card-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.task-card-footer .btn-sm {
+    padding: 6px 12px;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container-fluid {
+    margin-left: 250px;
+}
+
+.no-tasks {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.bg-light-success {
+    background-color: #81c784; 
+}
+
+.bg-light-warning {
+    background-color: #ffeb3b; 
+}
+
+.bg-light-danger {
+    background-color: #f44336; 
+}
+
+.badge {
+    font-size: 1.1rem;
+    padding: 0.3rem 0.7rem;
+}
+
+         .file-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .file-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .file-item span {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .remove-file {
+        background: none;
+        border: none;
+        color: #ff6b6b;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .remove-file:hover {
+        color: #ff3b3b;
+    }
+   

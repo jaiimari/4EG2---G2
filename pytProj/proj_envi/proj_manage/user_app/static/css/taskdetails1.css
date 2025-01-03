@@ -1,0 +1,119 @@
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fb;
+            color: #000;
+        }
+        .container-fluid {
+            margin-left: 20px;
+            margin-top: 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        .task-detail {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        hr {
+            border: 1px solid #6c757d;
+            margin: 20px 0;
+        }
+        .task-files a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .task-files a:hover {
+            text-decoration: underline;
+        }
+        .no-data {
+            font-style: italic;
+            color: #adb5bd;
+        }
+        .upload-section {
+            margin-top: 20px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .upload-section input[type="file"] {
+            margin-bottom: 12px;
+        }
+        .upload-section .btn {
+            padding: 10px 18px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .upload-section .btn-primary {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+        .upload-section .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .upload-section .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .upload-section .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+
+     
+        .btn-danger.btn-sm {
+    width: 20px;
+    height: 20px; 
+    padding: 0; 
+    font-size: 12px; 
+    line-height: 1; 
+    text-align: center;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header-title {
+            font-size: 1.75rem;
+            font-weight: bold;
+        }
+        .back-button {
+    background-color: #6c757d; 
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-button:hover {
+    background-color: #5a6268; 
+}
+
+        .back-button i {
+            margin-right: 5px;
+        }
+ 
+
+   
+    

@@ -1,0 +1,22 @@
+
+        .dashboard-header {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            border-bottom: 2px solid #ddd;
+        }
+        .dashboard-header h1 {
+            font-size: 1.8rem;
+            color: #495057;
+        }
+        .dashboard-header p {
+            font-size: 1.1rem;
+            color: #6c757d;
+        }
+        .btn-custom {
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        .card {
+            margin-top: 20px;
+        }
+   
